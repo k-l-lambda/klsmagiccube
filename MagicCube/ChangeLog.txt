@@ -1,0 +1,183 @@
+TODO:
+	bind to python.
+		register nested classes.
+	15grades.lua: adjust detail in grade 2 and refine thransition between grade 1,2.
+	
+Issues:
+	testCase3 failed if use 'operator ==' instead of 'logicEqual'.
+	ExampleApplication::saveGuiConfig: sometimes 'ogre.cfg' cannot open.
+	15grades.py: logic error in 'advance'.
+	Sample_RandomSuperFlip.lua: multi-thread running may result in random function block.
+
+
+2008.2.20	K.L.	<xxxK.L.xxx@gmail.com>
+
+	|	PythonDebugger.py: implemented.
+
+
+2008.2.18	K.L.	<xxxK.L.xxx@gmail.com>
+
+	>	Export MagicCube symbols in config ReleaseLuaDll, and import into config Release and ReleasePYD.
+
+
+2008.2.17	K.L.	<xxxK.L.xxx@gmail.com>
+
+	>	Player::next: handle 'next' thread exceptions.
+
+	>	15grades.lua: fix a bug in function 'evaluateFaceCorner'.
+
+
+2008.2.16	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	Frame.cpp/showFileDialog: add filter parameter.
+
+
+2008.2.15	K.L.	<xxxK.L.xxx@gmail.com>
+
+	*!	Reference to const returned value function will fail to register to python, fixed by use 'return_internal_reference'.
+
+
+2008.2.14	K.L.	<xxxK.L.xxx@gmail.com>
+
+	|	PythonPlayer: set up.
+
+
+2008.2.11	K.L.	<xxxK.L.xxx@gmail.com>
+
+	>	Player::clearEngine: added. Thread-safe issue fixed.
+
+
+2008.2.10	K.L.	<xxxK.L.xxx@gmail.com>
+
+	|	Player: multi-thread implemented.
+
+
+2008.2.8	K.L.	<xxxK.L.xxx@gmail.com>
+
+	*!	cl.exe crushed due to boost::bind parameters unmatched(omit _1).
+
+
+2008.2.7	K.L.	<xxxK.L.xxx@gmail.com>
+
+	>	Frame::setupGui: fix bug: PlayerNext implemented. The message binding omitted ago.
+
+
+2008.2.6	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	ExampleApplication: load and save GUI config.
+
+
+2008.2.5	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	Frame::onGuiChangeMirrorEffect: added, implemented.
+	+	Frame::onGuiChangeShininess: added, implemented.
+
+
+2008.2.4	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	Scripts Guide.txt: set up.
+	+	K.L.'s MagicCube Script API Reference.htm: set up.
+
+
+2008.2.2	K.L.	<xxxK.L.xxx@gmail.com>
+
+	>	Frame::frameStarted: remove redundant loops when manipulatation transition.
+
+	|	15grades.lua: set up.
+
+
+2008.2.1	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	LuaDebugger.lua: created, implemented.
+
+
+2008.1.31	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	Add configuration ReleaseLuaDll.
+
+	*!	lua function 'package.loadlib' load EXE module may failed, except that the EXE module interface
+			exported by .def file and 'main' entry undefined.
+
+
+2008.1.30	K.L.	<xxxK.L.xxx@gmail.com>
+
+	|	LuaPlayer: implemented.
+
+	*!	lua function 'print' require 'luaopen_base' called.
+
+
+2008.1.27	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	Frame::m_PlayerStep: added.
+
+	+	Frame: implement player and playback save/load.
+
+
+2008.1.26	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	Frame: add shut button.
+
+	>	Frame::onSaveSnapshot: hide GUI when save snapshot.
+
+
+2008.1.24	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	Add and implement buttons.
+
+
+2008.1.23	K.L.	<xxxK.L.xxx@gmail.com>
+
+	|	Implement cub map effect.
+
+
+2008.1.20	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	Frame::onSaveSnapshot: added, implemented.
+	+	Frame::onLoadSnapshot: added, implemented.
+
+
+2008.1.19	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	Frame: record manipulatation history and implement undo, redo.
+
+	+	MagicCube::StateArchive: created, implemented.
+
+	+	MagicCube::inoutValid: added, implemented.
+
+
+2008.1.18	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	Frame::frameEnded: yield CPU.
+
+	>	Frame::setMagicCube: redirect entity to match every unique cube unit.
+
+	>	Fix bug: crush if exit by Alt+F4, cause: the ExampleFrameListener::mMouse and
+			ExampleFrameListener::mKeyboard was removed when window close.
+
+
+2008.1.17	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	Frame: implement wheel manipulatation.
+
+	|	Mouse manipulatation achieved.
+
+	|	Cursor-face sense succeed.
+
+
+2008.1.15	K.L.	<xxxK.L.xxx@gmail.com>
+
+	|	Import CEGUI succeed.
+
+	|	Realse build OK.
+
+
+2008.1.14	K.L.	<xxxK.L.xxx@gmail.com>
+
+	+	Frame::mouseMoved: implement wheel zoom.
+
+	|	MagicCube logic setup correctly.
+
+	+	ChangeLog.txt: created.
+
+
+--------------------------------------------- MagicCube ChangeLog ---------------------------------------------

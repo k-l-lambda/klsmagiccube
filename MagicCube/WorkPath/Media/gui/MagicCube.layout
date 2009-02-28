@@ -1,0 +1,222 @@
+<?xml version="1.0" ?>
+<!-- Layout file for MagicCube UI -->
+<GUILayout>
+	<Window Type="DefaultGUISheet" Name="root">
+		<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+		<Window Type="TaharezLook/RadioButton" Name="MagicCube/Dot0" >
+			<Property Name="ID" Value="2" />
+			<Property Name="Font" Value="BlueHighway-12" />
+			<Property Name="Text" Value="" />
+			<Property Name="GroupID" Value="1" />
+			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
+			<Property Name="InheritsAlpha" Value="False" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.362541,0},{0.194019,0},{0.429099,0}}" />
+		</Window>
+		<Window Type="TaharezLook/RadioButton" Name="MagicCube/Dot1" >
+			<Property Name="ID" Value="2" />
+			<Property Name="Font" Value="BlueHighway-12" />
+			<Property Name="Text" Value="" />
+			<Property Name="GroupID" Value="1" />
+			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
+			<Property Name="InheritsAlpha" Value="False" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.462541,0},{0.194019,0},{0.529099,0}}" />
+		</Window>
+		<Window Type="TaharezLook/RadioButton" Name="MagicCube/Dot2" >
+			<Property Name="ID" Value="2" />
+			<Property Name="Font" Value="BlueHighway-12" />
+			<Property Name="Text" Value="" />
+			<Property Name="GroupID" Value="1" />
+			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
+			<Property Name="InheritsAlpha" Value="False" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />
+		</Window>
+		<Window Type="TaharezLook/RadioButton" Name="MagicCube/Dot3" >
+			<Property Name="ID" Value="2" />
+			<Property Name="Font" Value="BlueHighway-12" />
+			<Property Name="Text" Value="" />
+			<Property Name="GroupID" Value="1" />
+			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
+			<Property Name="InheritsAlpha" Value="False" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />
+		</Window>
+		<Window Type="TaharezLook/RadioButton" Name="MagicCube/Dot4" >
+			<Property Name="ID" Value="2" />
+			<Property Name="Font" Value="BlueHighway-12" />
+			<Property Name="Text" Value="" />
+			<Property Name="GroupID" Value="1" />
+			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
+			<Property Name="InheritsAlpha" Value="False" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />
+		</Window>
+		<Window Type="TaharezLook/RadioButton" Name="MagicCube/Dot5" >
+			<Property Name="ID" Value="2" />
+			<Property Name="Font" Value="BlueHighway-12" />
+			<Property Name="Text" Value="" />
+			<Property Name="GroupID" Value="1" />
+			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
+			<Property Name="InheritsAlpha" Value="False" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />
+		</Window>
+		<Window Type="TaharezLook/RadioButton" Name="MagicCube/Dot6" >
+			<Property Name="ID" Value="2" />
+			<Property Name="Font" Value="BlueHighway-12" />
+			<Property Name="Text" Value="" />
+			<Property Name="GroupID" Value="1" />
+			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
+			<Property Name="InheritsAlpha" Value="False" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />
+		</Window>
+		<Window Type="TaharezLook/RadioButton" Name="MagicCube/Dot7" >
+			<Property Name="ID" Value="2" />
+			<Property Name="Font" Value="BlueHighway-12" />
+			<Property Name="Text" Value="" />
+			<Property Name="GroupID" Value="1" />
+			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
+			<Property Name="InheritsAlpha" Value="False" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />
+		</Window>
+		<Window Type="TaharezLook/RadioButton" Name="MagicCube/Dot8" >
+			<Property Name="ID" Value="2" />
+			<Property Name="Font" Value="BlueHighway-12" />
+			<Property Name="Text" Value="" />
+			<Property Name="GroupID" Value="1" />
+			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
+			<Property Name="InheritsAlpha" Value="False" />
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />
+		</Window>
+		<Window Type="TaharezLook/Button" Name="MagicCube/Shut">
+			<Property Name="UnifiedPosition" Value="{{0.9,0},{0.9,0}}" />
+			<Property Name="UnifiedSize" Value="{{0.06,0},{0.06,0}}" />
+			<Property Name="Text" Value="SHUT" />
+			<Property Name="Tooltip" Value="Exit MagicCube" />
+		</Window>
+		<Window Type="TaharezLook/Button" Name="MagicCube/ResetMagicCube">
+			<Property Name="UnifiedPosition" Value="{{0.03,0},{0.02,0}}" />
+			<Property Name="UnifiedSize" Value="{{0.14,0},{0.06,0}}" />
+			<Property Name="Text" Value="Reset MagicCube" />
+			<Property Name="Tooltip" Value="shortcut: F2" />
+		</Window>
+		<Window Type="TaharezLook/Button" Name="MagicCube/SaveSnapshot">
+			<Property Name="UnifiedPosition" Value="{{0.21,0},{0.02,0}}" />
+			<Property Name="UnifiedSize" Value="{{0.13,0},{0.06,0}}" />
+			<Property Name="Text" Value="Save Snapshot" />
+			<Property Name="Tooltip" Value="shortcut: SysRq" />
+		</Window>
+		<Window Type="TaharezLook/Button" Name="MagicCube/LoadSnapshot">
+			<Property Name="UnifiedPosition" Value="{{0.35,0},{0.02,0}}" />
+			<Property Name="UnifiedSize" Value="{{0.13,0},{0.06,0}}" />
+			<Property Name="Text" Value="Load Snapshot" />
+			<Property Name="Tooltip" Value="shortcut: Ctrl+L" />
+		</Window>
+		<Window Type="TaharezLook/Button" Name="MagicCube/UndoManipulatation">
+			<Property Name="UnifiedPosition" Value="{{0.54,0},{0.02,0}}" />
+			<Property Name="UnifiedSize" Value="{{0.08,0},{0.06,0}}" />
+			<Property Name="Text" Value="Undo" />
+			<Property Name="Tooltip" Value="shortcut: Ctrl+Z" />
+		</Window>
+		<Window Type="TaharezLook/Button" Name="MagicCube/RedoManipulatation">
+			<Property Name="UnifiedPosition" Value="{{0.63,0},{0.02,0}}" />
+			<Property Name="UnifiedSize" Value="{{0.08,0},{0.06,0}}" />
+			<Property Name="Text" Value="Redo" />
+			<Property Name="Tooltip" Value="shortcut: Ctrl+Y" />
+		</Window>
+		<Window Type="TaharezLook/Button" Name="MagicCube/NextSkyBox">
+			<Property Name="UnifiedPosition" Value="{{0.8,0},{0.02,0}}" />
+			<Property Name="UnifiedSize" Value="{{0.13,0},{0.06,0}}" />
+			<Property Name="Text" Value="Change SkyBox" />
+			<Property Name="Tooltip" Value="shortcut: Shift+Tab" />
+		</Window>
+		<Window Type="TaharezLook/Button" Name="MagicCube/SavePlayback">
+			<Property Name="UnifiedPosition" Value="{{0.03,0},{0.10,0}}}" />
+			<Property Name="UnifiedSize" Value="{{0.11,0},{0.06,0}}" />
+			<Property Name="Text" Value="Save Playback" />
+		</Window>
+		<Window Type="TaharezLook/Button" Name="MagicCube/LoadPlayback">
+			<Property Name="UnifiedPosition" Value="{{0.15,0},{0.10,0}}}" />
+			<Property Name="UnifiedSize" Value="{{0.11,0},{0.06,0}}" />
+			<Property Name="Text" Value="Load Playback" />
+		</Window>
+		<Window Type="TaharezLook/Button" Name="MagicCube/LoadPythonScript">
+			<Property Name="UnifiedPosition" Value="{{0.275,0},{0.10,0}}}" />
+			<Property Name="UnifiedSize" Value="{{0.09,0},{0.06,0}}" />
+			<Property Name="Text" Value="Load Python" />
+			<Property Name="Alpha" Value="1" />
+		</Window>
+		<Window Type="TaharezLook/Button" Name="MagicCube/LoadLuaScript">
+			<Property Name="UnifiedPosition" Value="{{0.38,0},{0.10,0}}}" />
+			<Property Name="UnifiedSize" Value="{{0.09,0},{0.06,0}}" />
+			<Property Name="Text" Value="Load Lua" />
+			<Property Name="Alpha" Value="1" />
+		</Window>
+		<Window Type="DefaultWindow" Name="MagicCube/PlayerBar">
+			<Property Name="UnifiedAreaRect" Value="{{0.49,0},{0.1,0},{0.96,0},{0.16,0}}" />
+			<Window Type="TaharezLook/StaticText" Name="MagicCube/PlayerSourceName">
+				<Property Name="UnifiedPosition" Value="{{0,0},{0.1,0}}}" />
+				<Property Name="UnifiedSize" Value="{{0.32,0},{0.8,0}}" />
+				<Property Name="Text" Value="static text" />
+				<Property Name="Tooltip" Value="playback source name" />
+			</Window>
+			<Window Type="TaharezLook/StaticText" Name="MagicCube/PlayerStep">
+				<Property Name="UnifiedPosition" Value="{{0.322,0},{0.1,0}}}" />
+				<Property Name="UnifiedSize" Value="{{0.075,0},{0.8,0}}" />
+				<Property Name="Text" Value="" />
+				<Property Name="Font" Value="BlueHighway-12" />
+				<Property Name="Tooltip" Value="current step index" />
+			</Window>
+			<Window Type="TaharezLook/Button" Name="MagicCube/PlayerStop">
+				<Property Name="UnifiedPosition" Value="{{0.41,0},{0.1,0}}}" />
+				<Property Name="UnifiedSize" Value="{{0.11,0},{0.8,0}}" />
+				<Property Name="Text" Value="X" />
+				<Property Name="Tooltip" Value="Stop and close player" />
+			</Window>
+			<Window Type="TaharezLook/Button" Name="MagicCube/PlayerHome">
+				<Property Name="UnifiedPosition" Value="{{0.53,0},{0.1,0}}}" />
+				<Property Name="UnifiedSize" Value="{{0.11,0},{0.8,0}}" />
+				<Property Name="Text" Value="&lt;&lt;" />
+				<Property Name="Tooltip" Value="Return front of playback" />
+			</Window>
+			<Window Type="TaharezLook/Button" Name="MagicCube/PlayerPrev">
+				<Property Name="UnifiedPosition" Value="{{0.65,0},{0.1,0}}}" />
+				<Property Name="UnifiedSize" Value="{{0.11,0},{0.8,0}}" />
+				<Property Name="Text" Value="|&lt;" />
+				<Property Name="Tooltip" Value="Back off 1 step" />
+			</Window>
+			<Window Type="TaharezLook/Button" Name="MagicCube/PlayerPlayPause">
+				<Property Name="UnifiedPosition" Value="{{0.77,0},{0.1,0}}}" />
+				<Property Name="UnifiedSize" Value="{{0.11,0},{0.8,0}}" />
+				<Property Name="Text" Value="||" />
+				<Property Name="Tooltip" Value="Toggle play/pause" />
+			</Window>
+			<Window Type="TaharezLook/Button" Name="MagicCube/PlayerNext">
+				<Property Name="UnifiedPosition" Value="{{0.89,0},{0.1,0}}}" />
+				<Property Name="UnifiedSize" Value="{{0.11,0},{0.8,0}}" />
+				<Property Name="Text" Value=">|" />
+				<Property Name="Tooltip" Value="Advance 1 step" />
+			</Window>
+		</Window>
+		<Window Type="TaharezLook/Checkbox" Name="MagicCube/MirrorEffect" >
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0.04,0},{0.9,0},{0.2,0},{0.92,0}}" />
+			<Property Name="ID" Value="2" />
+			<Property Name="Text" Value="MirrorEffect" />
+			<Property Name="Tooltip" Value="Open or close mirror effect on cube surface." />
+		</Window>
+		<Window Type="TaharezLook/Checkbox" Name="MagicCube/Shininess" >
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="UnifiedAreaRect" Value="{{0.04,0},{0.93,0},{0.2,0},{0.95,0}}" />
+			<Property Name="ID" Value="2" />
+			<Property Name="Text" Value="Shininess" />
+			<Property Name="Tooltip" Value="Open or close shininess on cube surface" />
+		</Window>
+	</Window>
+
+</GUILayout>
