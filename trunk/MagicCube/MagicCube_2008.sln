@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MagicCube_vc9", "MagicCube_vc9.vcproj", "{A9EBE9A2-71D5-471F-9D06-D2D709B94376}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		ReleaseLuaDll|Win32 = ReleaseLuaDll|Win32
+		ReleasePYD|Win32 = ReleasePYD|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9EBE9A2-71D5-471F-9D06-D2D709B94376}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A9EBE9A2-71D5-471F-9D06-D2D709B94376}.Debug|Win32.Build.0 = Debug|Win32
+		{A9EBE9A2-71D5-471F-9D06-D2D709B94376}.Release|Win32.ActiveCfg = Release|Win32
+		{A9EBE9A2-71D5-471F-9D06-D2D709B94376}.Release|Win32.Build.0 = Release|Win32
+		{A9EBE9A2-71D5-471F-9D06-D2D709B94376}.ReleaseLuaDll|Win32.ActiveCfg = ReleaseLuaDll|Win32
+		{A9EBE9A2-71D5-471F-9D06-D2D709B94376}.ReleaseLuaDll|Win32.Build.0 = ReleaseLuaDll|Win32
+		{A9EBE9A2-71D5-471F-9D06-D2D709B94376}.ReleasePYD|Win32.ActiveCfg = ReleasePYD|Win32
+		{A9EBE9A2-71D5-471F-9D06-D2D709B94376}.ReleasePYD|Win32.Build.0 = ReleasePYD|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

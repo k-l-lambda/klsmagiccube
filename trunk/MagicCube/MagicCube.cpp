@@ -279,8 +279,12 @@ namespace MagicCube
 		m_CubeArray[24]	= UnitCube(AXIS_POSITION[4],	IDENTITY_ORIENTATION);
 		m_CubeArray[25]	= UnitCube(AXIS_POSITION[5],	IDENTITY_ORIENTATION);
 
-		m_HistoryManipulation.c.clear();
-		m_CancelledManipulation.c.clear();
+		//m_HistoryManipulation.c.clear();
+		while(!m_HistoryManipulation.empty())
+			m_HistoryManipulation.pop();
+		//m_CancelledManipulation.c.clear();
+		while(!m_CancelledManipulation.empty())
+			m_CancelledManipulation.pop();
 
 		std::cout << "[MagicCube] reset." << std::endl;
 	}
@@ -315,8 +319,12 @@ namespace MagicCube
 		m_CubeArray[24]	= UnitCube(AXIS_POSITION[4],	IDENTITY_ORIENTATION);
 		m_CubeArray[25]	= UnitCube(AXIS_POSITION[5],	IDENTITY_ORIENTATION);
 
-		m_HistoryManipulation.c.clear();
-		m_CancelledManipulation.c.clear();
+		//m_HistoryManipulation.c.clear();
+		while(!m_HistoryManipulation.empty())
+			m_HistoryManipulation.pop();
+		//m_CancelledManipulation.c.clear();
+		while(!m_CancelledManipulation.empty())
+			m_CancelledManipulation.pop();
 
 		//assert(physicalValid());
 		if(!physicalValid())
@@ -400,7 +408,9 @@ namespace MagicCube
 		_doManipulation(m);
 
 		m_HistoryManipulation.push(m);
-		m_CancelledManipulation.c.clear();
+		//m_CancelledManipulation.c.clear();
+		while(!m_CancelledManipulation.empty())
+			m_CancelledManipulation.pop();
 	}
 
 	void MagicCube::undoManipulation(Manipulation m)

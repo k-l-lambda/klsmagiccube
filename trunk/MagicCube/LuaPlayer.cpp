@@ -94,7 +94,7 @@ namespace MagicCube
 					value("pZ",		Face_pZ),
 					value("nZ",		Face_nZ)
 				]
-				.def(self * other<const Orientation&>())
+				.def(const_self * other<const Orientation&>())
 			,
 			class_<Manipulation>("Manipulation")
 				.enum_("constants")

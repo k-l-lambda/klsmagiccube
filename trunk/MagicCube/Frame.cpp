@@ -556,7 +556,7 @@ void Frame::createScene()
 
 	m_nodeCameraRoot->setOrientation(Quaternion(m_SkyBoxAngle, Vector3::UNIT_Y));
 	m_nodeCamera = m_nodeCameraRoot->createChildSceneNode(Vector3(3, 0, 15));
-	mCamera->setPosition(m_nodeCamera->getWorldPosition());
+	mCamera->setPosition(m_nodeCamera->_getDerivedPosition());
 	mCamera->lookAt(0,0,0);
 
 	mSceneMgr->setSkyBox(true, "MagicCube/SkyBox");
@@ -593,8 +593,8 @@ void Frame::frameStarted(const FrameEvent& evt)
 
 		// rotate camera
 		m_nodeCameraRoot->setOrientation(Quaternion(m_SkyBoxAngle, Vector3::UNIT_Y));
-		mCamera->setPosition(m_nodeCamera->getWorldPosition());
-		mCamera->lookAt(m_nodeMagicCube->getWorldPosition());
+		mCamera->setPosition(m_nodeCamera->_getDerivedPosition());
+		mCamera->lookAt(m_nodeMagicCube->_getDerivedPosition());
 	}
 
 	// find focus face

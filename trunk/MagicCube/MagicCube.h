@@ -555,7 +555,7 @@ namespace MagicCube
 		size_t	getUnitPositionStateIndex(size_t index) const;
 		size_t	getUnitOrientationStateIndex(size_t index) const;
 
-		const std::deque<Manipulation>&	getHistoryManipulation() const	{return m_HistoryManipulation.c;};
+		const std::deque<Manipulation>&	getHistoryManipulation() const	{return m_HistoryManipulation._Get_container();};
 
 		static const size_t	s_ActiveCubeCount = 26;
 
