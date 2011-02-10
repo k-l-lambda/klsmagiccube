@@ -113,6 +113,8 @@ public:
 		win->getCustomAttribute("WINDOW", &windowHnd);
 		windowHndStr << windowHnd;
 		pl.insert(std::make_pair(std::string("WINDOW"), windowHndStr.str()));
+		pl.insert(std::make_pair(std::string("w32_mouse"), std::string("DISCL_EXCLUSIVE")));
+		pl.insert(std::make_pair(std::string("w32_mouse"), std::string("DISCL_FOREGROUND")));
 
 		mInputManager = InputManager::createInputSystem( pl );
 
@@ -287,13 +289,13 @@ public:
 		const MouseState &ms = mMouse->getMouseState();
 		if( ms.buttonDown( MB_Right ) )
 		{
-			mTranslateVector.x += ms.X.rel * 0.13;
-			mTranslateVector.y -= ms.Y.rel * 0.13;
+			mTranslateVector.x += ms.X.rel * 0.13f;
+			mTranslateVector.y -= ms.Y.rel * 0.13f;
 		}
 		else
 		{
-			mRotX = Degree(-ms.X.rel * 0.13);
-			mRotY = Degree(-ms.Y.rel * 0.13);
+			mRotX = Degree(-ms.X.rel * 0.13f);
+			mRotY = Degree(-ms.Y.rel * 0.13f);
 		}
 
 		return true;
@@ -345,7 +347,7 @@ public:
 			if (evt.timeSinceLastFrame == 0)
 			{
 				mMoveScale = 1;
-				mRotScale = 0.1;
+				mRotScale = 0.1f;
 			}
 			// Otherwise scale movement units by time passed since last frame
 			else

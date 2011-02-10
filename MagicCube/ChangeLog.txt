@@ -10,6 +10,11 @@ Issues:
 	Sample_RandomSuperFlip.lua: multi-thread running may result in random function block.
 
 
+2011.2.10	K.L.	<xxxK.L.xxx@gmail.com>
+
+	>	Updated for Ogre 1.7.1.
+
+
 2008.2.20	K.L.	<xxxK.L.xxx@gmail.com>
 
 	|	PythonDebugger.py: implemented.

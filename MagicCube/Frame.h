@@ -148,7 +148,7 @@ private:
 		};
 	}	m_ManipulatationTransition;
 
-    boost::shared_ptr<CEGUI::Renderer>	m_GuiRenderer;
+	boost::shared_ptr<CEGUI::Renderer>	m_GuiRenderer;
 	boost::shared_ptr<CEGUI::System>	m_GuiSystem;
 
 	CEGUI::Point		m_GuiCursorPostion;

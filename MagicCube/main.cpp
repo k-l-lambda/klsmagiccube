@@ -235,7 +235,7 @@ INT WINAPI WinMain( HINSTANCE hInst, HINSTANCE, LPSTR strCmdLine, INT )
 		std::cout << std::endl;
 	}*/
 
-#ifdef	_DEBUG
+/*#ifdef	_DEBUG
 	assert(testCase1());
 	std::cout << "test case 1 passed." << std::endl;
 	assert(testCase2());
@@ -265,7 +265,7 @@ INT WINAPI WinMain( HINSTANCE hInst, HINSTANCE, LPSTR strCmdLine, INT )
 	ASSERT_FACE_MANIPULATION_CAST_CORRECT(Rotate_nZ90)
 	ASSERT_FACE_MANIPULATION_CAST_CORRECT(Rotate_nZn90)
 	ASSERT_FACE_MANIPULATION_CAST_CORRECT(Rotate_nZ180)
-#endif
+#endif*/
 
 	// Create application object
 	Frame frame;
