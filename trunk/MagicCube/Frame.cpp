@@ -208,10 +208,10 @@ CEGUI::MouseButton convertOISMouseButtonToCegui(int buttonID)
 
 bool	rightDeflect(const Vector2& p1, const Vector2& p2, const Vector2& p3)
 {
-	Vector2 sub1 = p2 - p1;
-	Vector2 sub2 = p3 - p2;
+	const Vector2 sub1 = p2 - p1;
+	const Vector2 sub2 = p3 - p2;
 
-	if(sub1 == Vector2::ZERO || sub2 == Vector2::ZERO)
+	/*if(sub1 == Vector2::ZERO || sub2 == Vector2::ZERO)
 		return false;
 
 	float sin1 = sub1.y / sqrt(sub1.x * sub1.x + sub1.y * sub1.y);
@@ -219,12 +219,13 @@ bool	rightDeflect(const Vector2& p1, const Vector2& p2, const Vector2& p3)
 	float sin2 = sub2.y / sqrt(sub2.x * sub2.x + sub2.y * sub2.y);
 	float cos2 = sub2.x / sqrt(sub2.x * sub2.x + sub2.y * sub2.y);
 
-	return sin1 * cos2 - cos1 * sin2 > 0;
+	return sin1 * cos2 - cos1 * sin2 > 0;*/
+	return sub1.y * sub2.x - sub1.x * sub2.y > 0;
 }
 
 bool	inTriangle(const Vector2& p, const Vector2& t1, const Vector2& t2, const Vector2& t3)
 {
-	bool right = rightDeflect(t1, t2, t3);
+	const bool right = rightDeflect(t1, t2, t3);
 	const Vector2& rt2 = right ? t2 : t3;
 	const Vector2& rt3 = right ? t3 : t2;
 
@@ -233,15 +234,15 @@ bool	inTriangle(const Vector2& p, const Vector2& t1, const Vector2& t2, const Ve
 
 bool	inQuadrangle(const Vector2& p, const Vector2& t1, const Vector2& t2, const Vector2& t3, const Vector2& t4)
 {
-	bool right1 = rightDeflect(t1, t2, t3);
+	const bool right1 = rightDeflect(t1, t2, t3);
 	const Vector2& rt1 = right1 ? t1 : t2;
 	const Vector2& rt2 = right1 ? t2 : t1;
 
-	bool right2 = rightDeflect(rt2, t3, t4);
+	const bool right2 = rightDeflect(rt2, t3, t4);
 	const Vector2& rt3 = right2 ? t3 : t4;
 	const Vector2& rt4 = right2 ? t4 : t3;
 
-	bool right3 = rightDeflect(rt1, rt3, rt4);
+	const bool right3 = rightDeflect(rt1, rt3, rt4);
 	const Vector2& rrt1 = right3 ? rt1 : rt4;
 	const Vector2& rrt4 = right3 ? rt4 : rt1;
 
@@ -251,7 +252,7 @@ bool	inQuadrangle(const Vector2& p, const Vector2& t1, const Vector2& t2, const 
 
 int	roundRadian(Real r)
 {
-	int i = r / half_pi;
+	int i = int(r / half_pi);
 
 	if(abs(r - i * half_pi) > half_pi / 2)
 		i += r > i * half_pi ? 1 : -1;
@@ -353,7 +354,7 @@ public:
 		if(mMouse)
 		{
 			const OIS::MouseState& mstate = mMouse->getMouseState();
-			return Vector2(mstate.X.abs, mstate.Y.abs);
+			return Vector2(Real(mstate.X.abs), Real(mstate.Y.abs));
 		}
 
 		return Vector2::ZERO;
@@ -563,7 +564,7 @@ void Frame::createScene()
 
 	setCubMap(s_CubeMaps[m_CurrentCubMap]);
 
-	mWindow->getViewport(0)->setBackgroundColour(ColourValue(0.2, 0.2, 0.2));
+	mWindow->getViewport(0)->setBackgroundColour(ColourValue(0.2f, 0.2f, 0.2f));
 
 	MagicCube::StateArchive sa(m_CubeCode);
 	if(sa.valid())
@@ -607,8 +608,8 @@ void Frame::frameStarted(const FrameEvent& evt)
 			for(size_t f = 0; f < 6; ++ f)
 			{
 				Vector3 faceNormal = positionToVector3(MagicCube::faceToPosition(MagicCube::Face(f)));
-				Matrix4 world;
-				m_nodeMagicCube->getWorldTransforms(&world);
+				const Matrix4& world = m_nodeMagicCube->_getFullTransform();
+				//m_nodeMagicCube->getDebugRenderable()->getWorldTransforms(&world);
 				faceNormal = world * faceNormal;
 
 				Vector3 cameraPos = -mCamera->getDirection();
@@ -622,12 +623,13 @@ void Frame::frameStarted(const FrameEvent& evt)
 					//std::cout << "face: " << f << std::endl;
 
 					std::vector<MagicCube::Position> pvertices = MagicCube::faceToVertices(MagicCube::Face(f));
+					static const Real scale = 1.5f;
 					Vector2 vertices2d[4] =
 					{
-						worldToViewport(world * (positionToVector3(pvertices[0]) * 1.5f)),
-						worldToViewport(world * (positionToVector3(pvertices[1]) * 1.5f)),
-						worldToViewport(world * (positionToVector3(pvertices[2]) * 1.5f)),
-						worldToViewport(world * (positionToVector3(pvertices[3]) * 1.5f)),
+						worldToViewport(world * (positionToVector3(pvertices[0]) * scale)),
+						worldToViewport(world * (positionToVector3(pvertices[1]) * scale)),
+						worldToViewport(world * (positionToVector3(pvertices[2]) * scale)),
+						worldToViewport(world * (positionToVector3(pvertices[3]) * scale)),
 					};
 
 					if(inQuadrangle(cursor, vertices2d[0], vertices2d[1], vertices2d[2], vertices2d[3]))
@@ -761,21 +763,22 @@ void Frame::frameStarted(const FrameEvent& evt)
 #ifdef	DISPLAY_DOT_INDICATOR
 	// draw dots on vertices
 	{
-		Matrix4 world;
-		m_nodeMagicCube->getWorldTransforms(&world);
+		const Matrix4& world = m_nodeMagicCube->_getFullTransform();
+		//m_nodeMagicCube->getDebugRenderable()->getWorldTransforms(&world);
 
 		std::vector<MagicCube::Position> vertices1 = MagicCube::faceToVertices(MagicCube::Face(0));
 		std::vector<MagicCube::Position> vertices2 = MagicCube::faceToVertices(MagicCube::Face(1));
+		static const Real scale = 1.5f;
 		Vector2 vertices2d[8] =
 		{
-			worldToViewport(world * (positionToVector3(vertices1[0]) * 1.5f)),
-			worldToViewport(world * (positionToVector3(vertices1[1]) * 1.5f)),
-			worldToViewport(world * (positionToVector3(vertices1[2]) * 1.5f)),
-			worldToViewport(world * (positionToVector3(vertices1[3]) * 1.5f)),
-			worldToViewport(world * (positionToVector3(vertices2[0]) * 1.5f)),
-			worldToViewport(world * (positionToVector3(vertices2[1]) * 1.5f)),
-			worldToViewport(world * (positionToVector3(vertices2[2]) * 1.5f)),
-			worldToViewport(world * (positionToVector3(vertices2[3]) * 1.5f)),
+			worldToViewport(world * (positionToVector3(vertices1[0]) * scale)),
+			worldToViewport(world * (positionToVector3(vertices1[1]) * scale)),
+			worldToViewport(world * (positionToVector3(vertices1[2]) * scale)),
+			worldToViewport(world * (positionToVector3(vertices1[3]) * scale)),
+			worldToViewport(world * (positionToVector3(vertices2[0]) * scale)),
+			worldToViewport(world * (positionToVector3(vertices2[1]) * scale)),
+			worldToViewport(world * (positionToVector3(vertices2[2]) * scale)),
+			worldToViewport(world * (positionToVector3(vertices2[3]) * scale)),
 		};
 
 		for(size_t i = 0; i < 8; ++ i)
@@ -913,7 +916,7 @@ bool Frame::mouseMoved(const OIS::MouseEvent& e)
 			static const Real FAR_DISTANCE = 24;
 
 			Vector3 camera = m_nodeCamera->getPosition() - m_nodeMagicCube->getPosition();
-			camera *= exp(-e.state.Z.rel / 1600.0);
+			camera *= exp(-e.state.Z.rel / 1600.0f);
 			if(camera.length() < NEAR_DISTANCE)
 				camera = camera.normalisedCopy() * NEAR_DISTANCE;
 			else if(camera.length() > FAR_DISTANCE)
@@ -937,7 +940,7 @@ bool Frame::mouseMoved(const OIS::MouseEvent& e)
 	if(m_ManipulatingMagicCube)
 		m_ManipulatationTransition.angle += e.state.Y.rel * 0.01f;
 
-	CEGUI::System::getSingleton().injectMouseMove(e.state.X.rel, e.state.Y.rel);
+	CEGUI::System::getSingleton().injectMouseMove(float(e.state.X.rel), float(e.state.Y.rel));
 
 	return true;
 }

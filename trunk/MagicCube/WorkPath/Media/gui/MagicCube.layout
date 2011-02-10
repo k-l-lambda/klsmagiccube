@@ -8,7 +8,6 @@
 			<Property Name="Font" Value="BlueHighway-12" />
 			<Property Name="Text" Value="" />
 			<Property Name="GroupID" Value="1" />
-			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
 			<Property Name="InheritsAlpha" Value="False" />
 			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
 			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.362541,0},{0.194019,0},{0.429099,0}}" />
@@ -18,7 +17,6 @@
 			<Property Name="Font" Value="BlueHighway-12" />
 			<Property Name="Text" Value="" />
 			<Property Name="GroupID" Value="1" />
-			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
 			<Property Name="InheritsAlpha" Value="False" />
 			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
 			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.462541,0},{0.194019,0},{0.529099,0}}" />
@@ -28,7 +26,6 @@
 			<Property Name="Font" Value="BlueHighway-12" />
 			<Property Name="Text" Value="" />
 			<Property Name="GroupID" Value="1" />
-			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
 			<Property Name="InheritsAlpha" Value="False" />
 			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
 			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />
@@ -38,7 +35,6 @@
 			<Property Name="Font" Value="BlueHighway-12" />
 			<Property Name="Text" Value="" />
 			<Property Name="GroupID" Value="1" />
-			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
 			<Property Name="InheritsAlpha" Value="False" />
 			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
 			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />
@@ -48,7 +44,6 @@
 			<Property Name="Font" Value="BlueHighway-12" />
 			<Property Name="Text" Value="" />
 			<Property Name="GroupID" Value="1" />
-			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
 			<Property Name="InheritsAlpha" Value="False" />
 			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
 			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />
@@ -58,7 +53,6 @@
 			<Property Name="Font" Value="BlueHighway-12" />
 			<Property Name="Text" Value="" />
 			<Property Name="GroupID" Value="1" />
-			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
 			<Property Name="InheritsAlpha" Value="False" />
 			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
 			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />
@@ -68,7 +62,6 @@
 			<Property Name="Font" Value="BlueHighway-12" />
 			<Property Name="Text" Value="" />
 			<Property Name="GroupID" Value="1" />
-			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
 			<Property Name="InheritsAlpha" Value="False" />
 			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
 			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />
@@ -78,7 +71,6 @@
 			<Property Name="Font" Value="BlueHighway-12" />
 			<Property Name="Text" Value="" />
 			<Property Name="GroupID" Value="1" />
-			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
 			<Property Name="InheritsAlpha" Value="False" />
 			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
 			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />
@@ -88,7 +80,6 @@
 			<Property Name="Font" Value="BlueHighway-12" />
 			<Property Name="Text" Value="" />
 			<Property Name="GroupID" Value="1" />
-			<Property Name="Tooltip" Value="Texture Shadows: Shadow casters are rendered to a texture and this is later projected onto shadow receivers. More flexible,  handles alpha and deforming vertex programs, and texture shadow can be used in shaders for more advanced effects. Uses more GPU memory and fixed size can cause aliasing (but see projection options)" />
 			<Property Name="InheritsAlpha" Value="False" />
 			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
 			<Property Name="UnifiedAreaRect" Value="{{0.00531136,0},{0.562541,0},{0.194019,0},{0.629099,0}}" />

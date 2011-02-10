@@ -25,13 +25,13 @@
 //#include <asm_math.h>
 namespace Ogre
 {
-	static const float pi = 4.0 * atan( 1.0 );
-	static const float half_pi = 0.5 * pi;
+	static const float pi = 4.0f * atan( 1.0f );
+	static const float half_pi = 0.5f * pi;
 }
-#include <CEGUI\CEGUISystem.h>
-#include <CEGUI\CEGUILogger.h>
-#include <CEGUI\CEGUISchemeManager.h>
-#include <CEGUI\CEGUIWindowManager.h>
-#include <CEGUI\CEGUIWindow.h>
-#include <CEGUI\elements\CEGUIPushButton.h>
-#include <CEGUI\elements\CEGUICheckbox.h>
+#include <CEGUISystem.h>
+#include <CEGUILogger.h>
+#include <CEGUISchemeManager.h>
+#include <CEGUIWindowManager.h>
+#include <CEGUIWindow.h>
+#include <elements\CEGUIPushButton.h>
+#include <elements\CEGUICheckbox.h>
